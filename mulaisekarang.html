@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - GlobalCraft Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #0a74da;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background: url('image/globalform.png') no-repeat center center/cover;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .form-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+            color: #fff;
+        }
+
+        .form-box h2 {
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .form-box input, .form-box select, .form-box button {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .form-box input, .form-box select {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .form-box button {
+            background-color: #0a74da;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-box button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-box a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GlobalCraft Academy</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Pendaftaran GlobalCraft Academy</h2>
+            <p>Daftarkan diri Anda untuk memulai perjalanan belajar global sekarang!</p>
+            <form action="#">
+                <input type="text" name="full-name" placeholder="Nama Lengkap" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Nomor Telepon" required>
+                <select name="course" required>
+                    <option value="">Pilih Kursus</option>
+                    <option value="AI">Kursus AI</option>
+                    <option value="Design">Desain Grafis</option>
+                    <option value="Animation">Animasi</option>
+                    <option value="DataScience">Data Science</option>
+                </select>
+                <button type="submit">Daftar Sekarang</button>
+            </form>
+            <a href="index.html">Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #0a74da;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+
+.hero {
+    background: url('image/globalform.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send image to the back */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background: #0a74da;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff6347; /* Ganti warna dengan yang lebih mencolok */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 99, 71, 0.8); /* Efek bayangan */
+    animation: fadeIn 2s ease-out; /* Animasi muncul */
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-button {
+    background: #0a74da;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature h3 {
+    margin-bottom: 1rem;
+    color: #0a74da;
+}
+
+.about {
+    background: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    color: #0a74da;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide h3 {
+    margin-top: 1rem;
+    color: #0a74da;
+}
+
+.slide p {
+    margin: 0.5rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    position: relative;
+    width: 50px; /* Adjust size */
+    height: 50px;
+    margin-right: 10px;
+}
+
+.animated-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Make the logo circular */
+    border: 2px solid #fff; /* Optional border */
+    animation: pop-in-out 2s infinite ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Effect */
+@keyframes pop-in-out {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.features-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #0a74da;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.slide h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.slide p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
